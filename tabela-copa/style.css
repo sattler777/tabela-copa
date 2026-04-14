@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+:root {
+  --verde-escuro:   #0a1f0f;
+  --verde-campo:    #1a3d22;
+  --verde-medio:    #2a6b38;
+  --verde-claro:    #3dab52;
+  --ouro:           #d4a017;
+  --ouro-claro:     #f0c040;
+  --branco:         #f5f2ea;
+  --branco-suave:   #e8e4d8;
+  --cinza:          #8a9090;
+  --cinza-escura:   #3e3f3f;
+  --linha:          rgba(255,255,255,0.07);
+  --radius:         12px;
+}
+
+body{
+    background-color: #2a2a2a;
+    background-image:
+    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 40px 40px; 
+}
+
+.header {
+   text-align: center;
+    padding: 20px;
+    color: var(--ouro-claro);
+}
+
+.mini-title {
+    margin-top: 40px;
+    margin-left: 10%;
+    color: var(--ouro-claro);
+    font-family: "Boldonse", system-ui;
+}
+
+.mini-text {
+    margin-left: 9%;
+    color: var(--branco-suave);
+    font-size: 20px;
+    padding: 12px;
+}
+
+table{
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden; 
+    border-collapse: separate; 
+    border-spacing: 0;
+}
+
+.table-principal {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.table-title{
+    padding: 35px;
+    color: var(--ouro);
+    font-size: 35px;
+    background: #1A3D22;
+    background: radial-gradient(circle, rgba(26, 61, 34, 1) 0%, rgba(42, 107, 56, 1) 76%, rgba(61, 171, 82, 1) 100%);
+    font-family: "Boldonse", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.table-principal th, .table-principal td {
+    border: 1px solid var(--linha);
+    padding: 15px;
+    background-color: var(--verde-campo);
+}
+
+.data-title {
+    color: var(--branco);
+    font-size: 18px;
+}
+
+.table-data{
+    color: var(--branco-suave);
+    font-size: 16px;
+}
+
+.table-time{
+    color: var(--ouro) ;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.flag {
+    font-size: 15px;
+    padding: 13px;
+}
+
+.versus {
+    color: var(--ouro);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+  width: 100%;
+  max-width: 860px;
+  padding: 0 32px 40px;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.footer span {
+  font-size: 11px;
+  color: rgba(255,255,255,0.2);
+  letter-spacing: 0.05em;
+}
